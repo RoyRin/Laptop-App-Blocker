@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.appblocker</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/app_blocker_daemon.sh</string>
+    </array>
+    
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <key>KeepAlive</key>
+    <true/>
+    
+    <key>ThrottleInterval</key>
+    <integer>60</integer>
+    
+    <key>StandardErrorPath</key>
+    <string>/tmp/appblocker.err</string>
+    
+    <key>StandardOutPath</key>
+    <string>/tmp/appblocker.out</string>
+</dict>
+</plist>
